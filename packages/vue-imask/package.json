@@ -23,7 +23,8 @@
     "mask"
   ],
   "dependencies": {
-    "imask": "^6.0.5"
+    "imask": "^6.0.5",
+    "vue": "^3.0.2"
   },
   "peerDependencies": {
     "vue": ">=2.2.0"

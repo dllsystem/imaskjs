@@ -1,10 +1,11 @@
 import IMask from 'imask/esm/imask';
-
+//import { createElement } from 'vue';
+import { h } from 'vue'
 
 const IMaskComponent = {
   name: 'imask-input',
 
-  render (createElement) {
+  render () {
     const props = {
       domProps: {
         value: this.maskRef ? this.maskRef.value : this.value
@@ -19,7 +20,7 @@ const IMaskComponent = {
       delete props.on.input;
     }
 
-    return createElement('input', props);
+    return h('input', props);
   },
 
   mounted () {
