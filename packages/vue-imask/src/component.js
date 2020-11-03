@@ -28,7 +28,7 @@ const IMaskComponent = {
     this._initMask();
   },
 
-  destroyed () {
+  unmounted () {
     this._destroyMask();
   },
 
